@@ -19,9 +19,9 @@
 	},
 	"top_banner": {
 		"enable": true,
-		"description": "-50% Intro price for the next 72 hours only!.",
+		"description": "한국인이 함께하는 행복한 공간",
 		"end_link": {
-			"url": "https://themeforest.net/item/ncmaz-nextjs-headless-wordpress-blog-magazine/47815656",
+			"url": "https://uscorean.com",
 			"text": "Buy now  →",
 			"new_tab": true
 		}
