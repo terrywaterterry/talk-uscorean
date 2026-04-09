@@ -62,6 +62,9 @@ const Card6: FC<Card6Props> = ({ className = 'h-full', post }) => {
 				</div>
 			</div>
 
+			{/*
+			edited by TK 04-06-2026
+
 			<Link
 				href={uri || ''}
 				className={`relative z-0 ms-3 block max-h-28 w-24 flex-shrink-0 overflow-hidden rounded-2xl sm:ms-5 sm:max-h-full sm:w-40`}
@@ -81,6 +84,7 @@ const Card6: FC<Card6Props> = ({ className = 'h-full', post }) => {
 					/>
 				</span>
 			</Link>
+			*/}
 		</div>
 	)
 }
