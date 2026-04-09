@@ -63,28 +63,30 @@ const Card6: FC<Card6Props> = ({ className = 'h-full', post }) => {
 			</div>
 
 			{/*
-			edited by TK 04-06-2026
+			edited by TK 04-06-2026 */}
 
-			<Link
-				href={uri || ''}
-				className={`relative z-0 ms-3 block max-h-28 w-24 flex-shrink-0 overflow-hidden rounded-2xl sm:ms-5 sm:max-h-full sm:w-40`}
-			>
-				<MyImage
-					sizes="(max-width: 600px) 180px, 400px"
-					className="h-full w-full object-cover"
-					fill
-					src={featuredImage?.sourceUrl || ''}
-					alt={title || 'Card Image'}
-				/>
-				<span className="absolute bottom-1 start-1">
-					<PostTypeFeaturedIcon
-						wrapSize="h-7 w-7"
-						iconSize="h-4 w-4"
-						postType={postFormats || ''}
-					/>
-				</span>
-			</Link>
-			*/}
+			{featuredImage?.sourceUrl && (
+ <Link
+    href={uri || '#'}
+    className={`relative z-0 ms-3 block max-h-28 w-24 flex-shrink-0 overflow-hidden rounded-2xl sm:ms-5 sm:max-h-full sm:w-40`}
+  >
+    <MyImage
+      sizes="(max-width: 600px) 180px, 400px"
+      className="h-full w-full object-cover"
+      fill
+      src={featuredImage.sourceUrl}
+      alt={title || 'Card Image'}
+    />
+    <span className="absolute bottom-1 start-1">
+      <PostTypeFeaturedIcon
+        wrapSize="h-7 w-7"
+        iconSize="h-4 w-4"
+        postType={postFormats || ''}
+      />
+    </span>
+  </Link>
+)}
+			
 		</div>
 	)
 }
