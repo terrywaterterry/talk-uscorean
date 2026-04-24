@@ -41,20 +41,21 @@ const Card11: FC<Card11Props> = ({
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
-      {/* 
-      edited by Terry - removed featured image ONLY for Card11
-
-      <div
+{/* edited by Terry - removed featured image ONLY for Card11
+      
+	  <div
         className={`relative z-10 block w-full flex-shrink-0 overflow-hidden rounded-t-3xl ${ratio}`}
       >
         <PostFeaturedMedia post={post} isHover={isHover} />
       </div>
       */}
 	
-      {/* edited by Terry - fix empty href warning */}
-      <Link href={uri || '#'} className="absolute inset-0"></Link>
+{/* edited by Terry - fix empty href warning */}
+      
+	  <Link href={uri || '#'} className="absolute inset-0"></Link>
+
 {/* edited by Terry - fix category position (remove absolute) */}
-     {/*
+	{/*
 	 <span className="absolute inset-x-3 top-3 z-10"> 
         <CategoryBadgeList categories={categories?.nodes || []} />
       </span>
@@ -62,18 +63,18 @@ const Card11: FC<Card11Props> = ({
 	<div className="px-4 pt-4">
   		<CategoryBadgeList categories={categories?.nodes || []} />
 	</div>
-	  */}
+	*/}
 
-	{/* edited by Terry - add top border */}
-      {/* <div className="flex flex-1 flex-col space-y-3 rounded-b-3xl border border-t-0 border-neutral-100 px-3.5 py-4 dark:border-neutral-800">
+{/* edited by Terry - add top border */}
+    {/* <div className="flex flex-1 flex-col space-y-3 rounded-b-3xl border border-t-0 border-neutral-100 px-3.5 py-4 dark:border-neutral-800">
       */}
-	{/* edited by Terry - move category into box */}
-	  	<div className="mb-2">
+{/* edited by Terry - move category into box */}
+	  	
+		<div className="mb-2">
   			<CategoryBadgeList categories={categories?.nodes || []} />
 		</div>
 
 		<div className="flex flex-1 flex-col space-y-3 rounded-3xl border border-neutral-100 px-4 py-4 dark:border-neutral-800">
-
 
 	    {!hiddenAuthor ? (
           <PostCardMeta meta={{ author, date }} />
