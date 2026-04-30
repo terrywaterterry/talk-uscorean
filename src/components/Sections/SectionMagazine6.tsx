@@ -44,13 +44,21 @@ const SectionMagazine6: FC<SectionMagazine6Props> = ({
 						src={featuredImage?.sourceUrl || ''}
 						className="object-cover"
 					/>
+					<Link
+									href={uri || ''}
+									className="line-clamp-3"
+									dangerouslySetInnerHTML={{ __html: title }}
+								></Link>
+{/* Terry edit front page
 					<div>
 						<span className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black"></span>
 					</div>
+*/}
 					
 					{/* CONTENT */}
 					<div className="dark group absolute flex max-w-2xl flex-col justify-end p-5 md:w-1/2 lg:w-2/3 lg:p-14">
 						<div className="">
+{/* Terry edit front page
 							<h2 className="text-base font-semibold text-white hover:text-neutral-300 md:text-xl lg:text-2xl xl:text-3xl">
 								<Link
 									href={uri || ''}
@@ -58,6 +66,7 @@ const SectionMagazine6: FC<SectionMagazine6Props> = ({
 									dangerouslySetInnerHTML={{ __html: title }}
 								></Link>
 							</h2>
+*/}
 							<div
 								dangerouslySetInnerHTML={{ __html: excerpt || '' }}
 								className="mt-5 hidden text-base text-neutral-200 lg:block"
@@ -70,7 +79,8 @@ const SectionMagazine6: FC<SectionMagazine6Props> = ({
 								date={date}
 								author={author}
 							/>
-						</div> */}
+						</div> 
+*/}
 					</div>
 					
 				</div>
