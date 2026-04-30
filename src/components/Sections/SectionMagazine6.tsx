@@ -63,14 +63,14 @@ const SectionMagazine6: FC<SectionMagazine6Props> = ({
 								className="mt-5 hidden text-base text-neutral-200 lg:block"
 							></div>
 						</div>
-
+{/* Terry edit front page
 						<div className="mt-7">
 							<CardAuthor2
 								readingTime={ncPostMetaData?.readingTime || 1}
 								date={date}
 								author={author}
 							/>
-						</div>
+						</div> */}
 					</div>
 					
 				</div>
