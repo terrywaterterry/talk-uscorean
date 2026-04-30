@@ -44,13 +44,11 @@ const SectionMagazine6: FC<SectionMagazine6Props> = ({
 						src={featuredImage?.sourceUrl || ''}
 						className="object-cover"
 					/>
-						{/* Hide by Terry front page first posting featured image only
 					<div>
 						<span className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black"></span>
 					</div>
-						*/}
+					
 					{/* CONTENT */}
-					{/* Hide by Terry front page first posting featured image only
 					<div className="dark group absolute flex max-w-2xl flex-col justify-end p-5 md:w-1/2 lg:w-2/3 lg:p-14">
 						<div className="">
 							<h2 className="text-base font-semibold text-white hover:text-neutral-300 md:text-xl lg:text-2xl xl:text-3xl">
@@ -74,7 +72,7 @@ const SectionMagazine6: FC<SectionMagazine6Props> = ({
 							/>
 						</div>
 					</div>
-						*/}
+					
 				</div>
 
 				{/* RIGHT */}
