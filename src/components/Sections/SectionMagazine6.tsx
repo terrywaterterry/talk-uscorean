@@ -36,7 +36,8 @@ const SectionMagazine6: FC<SectionMagazine6Props> = ({
 		return (
 			<main className="relative">
 				{/* Image */}
-				<div className="aspect-h-9 aspect-w-9 overflow-hidden rounded-3xl md:aspect-h-5 lg:rounded-[40px]">
+			<Link href={uri || ''}	>
+				<div className="aspect-h-9 aspect-w-9 overflow-hidden rounded-3xl md:aspect-h-5 lg:rounded-[40px]">	
 					<MyImage
 						fill
 						alt={title || ''}
@@ -44,11 +45,6 @@ const SectionMagazine6: FC<SectionMagazine6Props> = ({
 						src={featuredImage?.sourceUrl || ''}
 						className="object-cover"
 					/>
-					<Link
-									href={uri || ''}
-									className="line-clamp-3"
-									dangerouslySetInnerHTML={{ __html: title }}
-								></Link>
 {/* Terry edit front page
 					<div>
 						<span className="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-black"></span>
@@ -82,9 +78,9 @@ const SectionMagazine6: FC<SectionMagazine6Props> = ({
 						</div> 
 */}
 					</div>
-					
+				
 				</div>
-
+			</Link>
 				{/* RIGHT */}
 				{!!subPosts.length && (
 					<div className="mt-5 h-96 overflow-hidden rounded-3xl bg-neutral-100 p-5 md:absolute md:bottom-3 md:end-3 md:top-3 md:mt-0 md:h-auto md:w-1/2 md:bg-white lg:w-1/3 lg:rounded-[34px] lg:p-8 xl:bg-opacity-80 xl:backdrop-blur-xl xl:backdrop-filter dark:bg-neutral-800 md:dark:bg-neutral-900 xl:dark:bg-opacity-80">
