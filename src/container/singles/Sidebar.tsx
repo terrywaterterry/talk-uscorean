@@ -15,7 +15,8 @@ export const Sidebar: FC<SidebarProps> = ({
 }) => {
 	return (
 		<div className={`nc-SingleSidebar lg:sticky lg:top-24 ${className}`}>
-			<WidgetAddSubscriberForm />
+
+      		<WidgetAddSubscriberForm />
 
 			<WidgetSocialsFollow />
 

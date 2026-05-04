@@ -11,7 +11,7 @@
 		"error_message": "Something went wrong. Please try again. If the problem persists, you can contact me."
 	},
 	"newsletter_section": {
-		"enable": true,
+		"enable": false,
 		"title": "Join our newsletter 🎉",
 		"description": "Read and share new perspectives on just about any topic. Everyone’s welcome.",
 		"right_image": "/images/SVG-subcribe2.png",
